@@ -14,7 +14,7 @@ $ make USE_PGXS=1 install
 ## How to use
 When you execute CREATE EXTENSION, the rand_ext schema is created and the functions are registered in it.
 ```
-psql -c "CREATE EXTENSION pg_rand_ext"
+$ psql -c "CREATE EXTENSION pg_rand_ext"
 $ psql -c "SELECT rand_ext.random_exponential(1,1000,0.3)"
  random_exponential 
 --------------------
