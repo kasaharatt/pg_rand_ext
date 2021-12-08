@@ -1,0 +1,47 @@
+{
+   "name": "pg_rand_ext",
+   "abstract": "Functions that generate random values for PostgreSQL",
+   "description": "pg_rand_ext is a set of functions that extends the functions for generating random values for PotstgreSQL.",
+   "version": "1.0.0",
+   "maintainer": "Tatsuhito Kasahara <kasahara.tatsuhito@gmail.com>",
+   "license": {
+      "PostgreSQL": "http://www.postgresql.org/about/licence"
+   },
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "PostgreSQL": "14.0.0"
+         },
+         "recommends": {
+            "PostgreSQL": "14.0.0"
+         }
+      }
+   },
+   "provides": {
+     "pg_rand_ext": {
+       "file": "pg_rand_ext--1.0.sql",
+       "docfile": "README.md",
+       "version": "1.0.0",
+       "abstract": "Functions that generate random values for PostgreSQL"
+     }
+   },
+   "resources": {
+      "bugtracker": {
+         "web": "https://github.com/kasaharatt/pg_rand_ext/issues"
+      },
+      "repository": {
+        "url":  "https://github.com/kasaharatt/pg_rand_ext.git",
+        "web":  "https://github.com/kasaharatt/pg_rand_ext",
+        "type": "git"
+      }
+   },
+   "generated_by": "Tatsuhito Kasahara",
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+   "tags": [
+      "random",
+      "pgbench"
+   ]
+}
