@@ -2,7 +2,7 @@
    "name": "pg_rand_ext",
    "abstract": "Functions that generate random values for PostgreSQL",
    "description": "pg_rand_ext is a set of functions that extends the functions for generating random values for PotstgreSQL.",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "maintainer": "Tatsuhito Kasahara <kasahara.tatsuhito@gmail.com>",
    "license": {
       "PostgreSQL": "http://www.postgresql.org/about/licence"
@@ -21,7 +21,7 @@
      "pg_rand_ext": {
        "file": "pg_rand_ext--1.0.sql",
        "docfile": "README.md",
-       "version": "1.0.0",
+       "version": "1.0.1",
        "abstract": "Functions that generate random values for PostgreSQL"
      }
    },
