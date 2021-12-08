@@ -8,6 +8,10 @@
 #include "fmgr.h"
 #include "port.h"
 
+
+#define MAX_ZIPFIAN_PARAM		1000.0
+#define MIN_ZIPFIAN_PARAM		1.001
+
 PG_MODULE_MAGIC;
 
 /* SQL functions */
@@ -219,6 +223,11 @@ random_zipfian(PG_FUNCTION_ARGS)
 	lb = PG_GETARG_INT64(0);
 	ub = PG_GETARG_INT64(1);
 	param = PG_GETARG_FLOAT8(2);
+	if (param < MIN_ZIPFIAN_PARAM || param > MAX_ZIPFIAN_PARAM)
+	{
+		elog(ERROR, "zipfian parameter must be in range [%.3f, %.0f] (not %f)",
+			MIN_ZIPFIAN_PARAM, MAX_ZIPFIAN_PARAM, param);
+	}
 	initRandomState();
 	PG_RETURN_INT64(getZipfianRand(&base_random_sequence, lb, ub, param));
 }
