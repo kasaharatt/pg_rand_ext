@@ -5,7 +5,7 @@ It implements random number generation functions according to each of the expone
 
 ## How to build
 The common way to build extension modules in PostgreSQL.
-It has been tested with PostgreSQL v14 and above.
+It has been tested with PostgreSQL v14 or later.
 ```
 <Go to pg_rand_ext dir>
 $ make USE_PGXS=1 install
